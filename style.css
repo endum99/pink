@@ -1,0 +1,279 @@
+body {
+    background-color: #ddd;
+    padding: 20px;
+    font-family: 18px;
+    font-family: "Funnel Display", sans-serif;
+}
+
+
+/* utama */
+.depan {
+    background-image: url(img/pink.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas:   
+   'pasangan save'
+   'pasangan kepada';
+    place-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.pasangan {
+    grid-area: pasangan;
+}
+
+.pasangan img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 8px 18px 1px black;
+}
+.save {
+    grid-area: save;
+}
+.kepada {
+    grid-area: kepada;
+}
+.save h3 span {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Kavoon", serif;
+    color: red;
+    letter-spacing: 2px;
+}
+.kepada {
+    padding: 18px;
+    border-radius: 10px;
+    background-color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-shadow: 2px 1px black;
+}
+
+.kepada span {
+    color: blue;
+    font-weight: bold;
+}
+
+/* mempelai */
+.mempelai {
+    background-image:  url(img/pink\ 4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'wanita pria';
+    padding: 35px;
+    margin-top: 20px;
+}
+.mempelai img {
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0px 8px 18px 1px black;
+}
+.mempelai span {
+    color: red;
+    text-decoration: underline;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.wanita {
+    grid-area: wanita;
+}
+.wanita span {
+    color: #039903;
+}
+.pria {
+    grid-area: pria;
+}
+.pria span {
+    color: #039903;
+}
+
+/* dalil */
+.dalil {
+    background-image: url(img/pink\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 37px;
+    margin-top: 20px;
+}
+.ayat p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+.ayat p span {
+    text-align: center;
+    font-weight: bold;
+}
+.kenyataan {
+    display: grid;
+    grid-template-areas:  'kenal jadian tunangan';
+}
+.kenal,
+.jadian,
+.tunangan {
+    background-color: white;
+    padding: 20px; 
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px black;
+    letter-spacing: 1.5px;
+}
+.kenyataan p {
+    text-align: center;
+}
+.kenyataan span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* acara */
+.acara {
+    margin-top: 20px;
+    background-image: url(img/pink\ 2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+}
+
+.isi span {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: red;
+    font-family: "Sue Ellen Francisco", cursive;
+    letter-spacing: 4px;
+}
+
+.isi {
+    display: grid;
+    grid-template-areas: 'akad resepsi'; 
+    gap: 10px;
+}
+.akad {
+    grid-area: akad;
+}
+.resepsi {
+    grid-area: resepsi;
+}
+
+.acara a {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.acara a:hover {
+    background-color: orange;
+    color: #000;
+}
+
+/* simpatisan */
+.simpatisan {
+    background-image: url(img/pink\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 100px;
+    display: grid;
+    grid-template-areas:  'family hadiah';
+}
+.simpatisan h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: red;
+    font-family: "Sue Ellen Francisco", cursive;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.family {
+    grid-area: family;
+}
+.hadiah {
+    grid-area: hadiah;
+    text-align: center;
+}
+.hadiah p{
+    letter-spacing: 3px;
+    font-size: 1.3em;
+}
+
+
+
+
+
+/* pc */
+@media (max-width: 1024px) {
+    body {
+        padding: 13px;
+    }
+    .depan {
+        grid-template-areas:   
+        'save'
+        'pasangan' 
+        'kepada';
+    }
+    .kepada {
+        margin-top: 35px;
+    }
+    .pasangan img {
+        width: 60%;
+    }
+    .mempelai {
+        grid-template-areas:  
+        'wanita' 
+        'pria';
+    }
+ 
+}
+
+/* hp */
+@media (max-width: 576px) {
+    body {
+        padding: 7px;
+    }
+    .save h3 {
+        font-size: 1.2em;
+    }
+    .save h2 {
+        font-size: 1.5em;
+    }
+    .depan {
+        margin-bottom: 20px;
+    }
+    .kepada {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .mempelai {
+        margin-top: 13px;
+    }
+    .dalil {
+        padding: 10px;
+    }
+    .ayat p {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .kenyataan {
+        grid-template-areas: ' kenal' 'jadian' 'tunangan';
+    }
+
+    .isi {
+        grid-template-areas: 'akad' 'resepsi';
+    }
+
+    .simpatisan {
+        grid-template-areas:  'family' 'hadiah';
+        padding: 30px;
+    }
+}
+
+
