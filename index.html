@@ -110,13 +110,25 @@
 
           <div class="hadiah">
             <h3>kado pernikahan</h3>
-            <p><b>BCA</b> <br> 1234567890</p>
-            <p><b>DANA</b> <br>08XX XXXX XXXX</p>
+            <p><b>BCA</b> <br> 123XXXXXXX</p>
+            <p><b>DANA</b> <br>08XXXXXXXXXX</p>
           </div>
        </section>
 
 
     </div>
+
+    <!-- Params -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.depan h4 span');
+      namaContainer.innerText = `${pronoun} ${nama}`.replace(/ ,$/, '');
+  
+      document.querySelector('#nama').value = nama;
+    </script>
+
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
